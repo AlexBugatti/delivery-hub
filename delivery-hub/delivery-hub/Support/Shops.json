@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Zinger",
+            "city": "Санкт-Петербург",
+            "street": "Невский проспект, д58",
+            "coordinate": { "longitude": 59.4545543, "latitude": 40.3240343 }
+        },
+        {
+            "id": 2,
+            "name": "KFC",
+            "city": "Омск",
+            "street": "Карла Маркса, д48",
+            "coordinate": { "longitude": 58.4545543, "latitude": 41.3240343 }
+        },
+        {
+            "id": 3,
+            "name": "ЦУМ",
+            "city": "Москва",
+            "street": "Петровка, д2",
+            "coordinate": { "longitude": 37.6194496, "latitude": 55.7612915 }
+        },
+        {
+            "id": 4,
+            "name": "Мега",
+            "city": "Омск",
+            "street": "ул. бул. Архитекторов, 35",
+            "coordinate": { "longitude": 73.2856802, "latitude": 54.9719312 }
+        },
+        {
+            "id": 5,
+            "name": "Феникс-Авто",
+            "city": "Омск",
+            "street": "Маяковского, д82",
+            "coordinate": { "longitude": 73.40811, "latitude": 54.97191 }
+        },
+        {
+            "id": 6,
+            "name": "Сидр и Нэнси",
+            "city": "Санкт-Петербург",
+            "street": "Некрасова, 28",
+            "coordinate": { "longitude": 30.3579520, "latitude": 59.9388890 }
+        },
+        {
+            "id": 7,
+            "name": "Хотдожная 8956",
+            "city": "Санкт-Петербург",
+            "street": "ул. Марата, 23",
+            "coordinate": { "longitude": 30.352834, "latitude": 59.927888 }
+        },
+        {
+            "id": 8,
+            "name": "Магнит #253",
+            "city": "Омск",
+            "street": "ул. Маяковского, 85",
+            "coordinate": { "longitude": 73.40554, "latitude": 54.97219 }
+        }
+    ]   
+}

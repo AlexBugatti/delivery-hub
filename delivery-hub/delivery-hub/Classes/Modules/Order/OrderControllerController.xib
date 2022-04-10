@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderControllerController" customModule="delivery_hub" customModuleProvider="target">
+            <connections>
+                <outlet property="completeButton" destination="Q1z-Da-bSe" id="aoN-4K-75N"/>
+                <outlet property="containerActiveOrderView" destination="PDK-Ly-PPY" id="vjS-OH-KR6"/>
+                <outlet property="containerOrderView" destination="uWd-sc-AgV" id="Fka-hl-P3m"/>
+                <outlet property="currentOrderView" destination="FUh-m0-Zhb" id="nYC-Wf-5LM"/>
+                <outlet property="nextOrderView" destination="DqL-OI-KW1" id="ks8-vN-77f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWd-sc-AgV">
+                    <rect key="frame" x="20" y="167.5" width="374" height="561"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqL-OI-KW1" customClass="OrderView" customModule="delivery_hub" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="561"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-m0-Zhb" customClass="OrderView" customModule="delivery_hub" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="561"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="FUh-m0-Zhb" secondAttribute="trailing" id="3NM-aP-rvv"/>
+                        <constraint firstItem="DqL-OI-KW1" firstAttribute="leading" secondItem="uWd-sc-AgV" secondAttribute="leading" id="DlP-lR-sxj"/>
+                        <constraint firstAttribute="width" secondItem="uWd-sc-AgV" secondAttribute="height" multiplier="2:3" id="I6H-Vg-J9a"/>
+                        <constraint firstAttribute="trailing" secondItem="DqL-OI-KW1" secondAttribute="trailing" id="No3-5o-1Eu"/>
+                        <constraint firstAttribute="bottom" secondItem="DqL-OI-KW1" secondAttribute="bottom" id="ZSh-c7-hyV"/>
+                        <constraint firstItem="FUh-m0-Zhb" firstAttribute="leading" secondItem="uWd-sc-AgV" secondAttribute="leading" id="je6-5H-fmQ"/>
+                        <constraint firstItem="DqL-OI-KW1" firstAttribute="top" secondItem="uWd-sc-AgV" secondAttribute="top" id="lsf-Sl-UkU"/>
+                        <constraint firstAttribute="bottom" secondItem="FUh-m0-Zhb" secondAttribute="bottom" id="nTe-uR-Aaa"/>
+                        <constraint firstItem="FUh-m0-Zhb" firstAttribute="top" secondItem="uWd-sc-AgV" secondAttribute="top" id="yGJ-29-8bj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDK-Ly-PPY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="F8h-PK-6kn">
+                            <rect key="frame" x="50" y="368" width="314" height="82.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У вас есть активный заказ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M6-b1-Jjp">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1z-Da-bSe">
+                                    <rect key="frame" x="0.0" y="32.5" width="314" height="50"/>
+                                    <color key="backgroundColor" red="0.36462545390000001" green="0.76928830150000005" blue="0.34892833229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="U83-F2-tE2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Завершить заказ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didCompleteOrder:" destination="-1" eventType="touchUpInside" id="p98-H2-95S"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="F8h-PK-6kn" firstAttribute="centerY" secondItem="PDK-Ly-PPY" secondAttribute="centerY" id="Td2-qg-lhb"/>
+                        <constraint firstItem="F8h-PK-6kn" firstAttribute="leading" secondItem="PDK-Ly-PPY" secondAttribute="leading" constant="50" id="Vlh-OX-U3H"/>
+                        <constraint firstAttribute="trailing" secondItem="F8h-PK-6kn" secondAttribute="trailing" constant="50" id="fXD-iP-EJE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uWd-sc-AgV" secondAttribute="trailing" constant="20" id="1Pq-yz-Vt4"/>
+                <constraint firstItem="PDK-Ly-PPY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2q0-xZ-9qg"/>
+                <constraint firstItem="PDK-Ly-PPY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Adm-MI-RQB"/>
+                <constraint firstItem="PDK-Ly-PPY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jcy-zv-QVx"/>
+                <constraint firstItem="uWd-sc-AgV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZZU-tA-lEi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PDK-Ly-PPY" secondAttribute="bottom" id="dSI-2O-GsT"/>
+                <constraint firstItem="uWd-sc-AgV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eJ6-uy-5NZ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
